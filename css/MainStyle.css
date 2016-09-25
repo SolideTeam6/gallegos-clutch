@@ -1,0 +1,278 @@
+@font-face {
+	font-family: weblysleekuil;
+	src: url(fonts/weblysleekuil.ttf);
+}
+@font-face {
+	font-family:Cabin;
+	src: url(fonts/Cabin-Regular.ttf);
+}
+body{
+	font-family: weblysleekuil;
+	text-align: center;
+}
+
+/*Dentro del header*/
+.heaven{
+	width: 100%;
+	text-align: right;
+	color: white;
+	font-size: 14px;
+	font-weight: bold;
+}
+.heaven p{
+	color:white;
+}
+#heaven{
+	background-color: #1A1A1A;
+	height: 60px;
+	z-index: 1;
+	color: white;
+}
+#loc{
+	margin-right: 110px;
+}
+#dir{
+	line-height: 0;
+}
+
+.navbar-default{
+	background-color: #FCFCFC;
+	font-size: 20px;
+}
+.navbar-header{
+	height: 70px;
+}
+#menu-items{
+	margin-top: 20px;
+}
+.dropdown-menu{
+	text-align: center;
+}
+li.dropdown, li#r-border{
+	border-right: 1px solid #E0E0E0;
+}
+
+/*dentro de content*/
+
+.content{
+	margin-top:-20px;
+}
+#mycarousel{
+	font-family: Cabin;
+}
+#taller{
+	text-align: center;
+	color: white;
+	background-color: #072244;
+	font-family: Cabin;
+	height: 84px;
+	margin-top: -20px;
+
+}
+#taller h1{
+	line-height: 2.2;
+}
+.container{
+	padding: 0;
+	width: 80%;
+	font-family: Cabin;
+	font-weight: bold;
+
+}
+.rounded-div{
+	width: 100px;
+	height: 100px;
+	border-radius: 200px;
+	background-color:#072244; 
+	padding: 0;
+	margin:0 auto;
+}
+.rounded-div i{
+	color: white;
+	font-size: 65px;
+	margin-top: 15px;
+}
+
+#btn-ser{
+
+	background-color: 707070;
+	font-size: 12px;
+	width: 70px;
+	text-align: center;
+	border: none;
+	margin-top:20px;
+}
+
+#blue{
+	font-family: Cabin;
+	font-weight: bold;
+	background-color: #072244;
+	text-align: left;
+	height: 220px;
+	margin-top:50px;
+}
+
+#blue h1{
+	color:white;
+	margin-left: 30px;
+}
+#piezas{
+	background-color: #072244;
+	color: white;
+}
+
+.white{
+	color:white;
+	font-weight: normal;
+}
+#horario{
+	background-color: #072244;
+	text-align: center;
+	float: right;
+}
+#imagenes{
+	padding:0; 
+}
+.omo{
+	padding: 0;
+	width: 100%;
+}
+#no-padd{
+	padding:0;
+}
+
+/*----- footer-------*/
+
+footer{
+	height: 100px;
+	background-color: #1A1A1A;
+	clear:both;
+	margin-top: 300px;
+}
+
+#info-footer, #redes-footer {
+	text-align: left;
+}
+#info-footer p, #redes-footer p {
+	color:white;
+}
+
+/*-------------Tamaños------------------*/
+
+@media (max-width: 842px) {
+
+	#piezas h1{
+		font-size: 30px;
+	}
+	#blue{
+		text-align: center;
+	}
+
+	footer{
+		margin-top: 150px;
+	}
+}
+@media (max-width: 768px) {
+
+	footer{
+		height: 300px;
+	}
+	#info-footer, #redes-footer {
+		text-align: center;
+	}
+}
+@media (max-width: 712px) {
+
+	#taller h1{
+		font-size: 20px;
+		line-height: 4;
+	}
+	
+}
+@media (max-width: 479px) {
+
+	.heaven{
+		display: none;
+	}
+	.navbar-default{
+		background-color: #1A1A1A;
+	}
+	.navbar-default .navbar-nav > li > a{
+		color:white;
+	}
+	.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
+		background-color: white;
+	}
+	.navbar-default{
+		border:none;
+	}
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a{
+		color:#EDEDED;
+	}
+}
+@media (max-width: 388px) {
+
+	#piezas h1{
+		font-size: 20px;
+		margin-left: -20px;
+	}
+	#piezas{
+		padding: 0;
+	}
+	#blue{
+		padding: 0;
+	}
+	
+	#taller h1{
+		font-size: 15px;
+		line-height: 6;
+	}
+}
+@media (max-width: 330px) {
+
+	#piezas h1{
+		margin-left: 0
+	}
+	#taller h1{
+		font-size: 13px;
+		line-height: 7;
+	}
+}
+@media (max-width: 290px) {
+
+	#piezas h1{
+		font-size: 15px;
+	}
+	#horario{
+		padding: 0;
+	}
+	#blue{
+		padding:0;
+	}
+	.white{
+		font-size: 10px;
+	}
+	.col-xs-6 .white{
+		width: 110px;
+		margin-left: -20px;
+	}
+
+	#taller h1{
+		font-size: 11px;
+		line-height: 8;
+	}
+}
+@media (max-width: 220px) {
+
+
+	.white{
+		font-size: 9px;
+	}
+	.col-xs-6 .white{
+		width: 90px;
+	}
+	#taller h1{
+		font-size: 9px;
+		line-height: 9;
+	}
+}
