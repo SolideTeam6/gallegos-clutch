@@ -15,12 +15,13 @@
 	width: 75%;
 }
 #btn-car{
-	background-color: #072244;
+	background-color: #123;
+	border: none;
 }
 
 #car-small-btn{
 	display: none;
-	background-color: #072244
+	background-color: #123
 }
 .text-car{
 	font-size: 18px;
