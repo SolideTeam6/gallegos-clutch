@@ -2,7 +2,7 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html class="js"> <!--<![endif]-->
     <head>
         <title>Gallegos Clutch</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -15,13 +15,13 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/MainStyle.css">
         <link rel="stylesheet" href="css/modal-style.css">
-        <link rel="stylesheet" href="css/fakeLoader.css">
+        <link rel="stylesheet" href="css/loader-style.css">
     </head>
     <body>
-    <!--[if lt IE 7]>
+    <!--[if lt oncontextmenu="return false" IE 7]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-        <div id="fakeloader"></div> 
+        <div id="preloader"></div> 
 
         <header>
             <div class="heaven">
@@ -427,19 +427,19 @@
           
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
           <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-          <script src="js/fakeLoader.min.js"></script>
+          <!-- <script src="js/fakeLoader.min.js"></script> -->
           <script src="js/loader.js"></script>
           
-          <script>
+          <!-- <script>
             $(document).ready(function(){
                 $("#fakeloader").fakeLoader({
-                    timeToHide:6000,
+                    timeToHide:2000,
                     bgColor:"#123",
-                    spinner:"spinner1"
-                    //imagePath:"css/img/ripple.gif"
+                    //spinner:"spinner1"
+                    imagePath:"css/img/gears2.gif"
                 });
             });
-        </script>
+        </script> -->
     <!--_______________________________________scripts______________________________________________-->
     </body>
 </html>
