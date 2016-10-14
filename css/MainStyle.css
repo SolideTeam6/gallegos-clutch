@@ -13,8 +13,110 @@ body{
 html{
 	text-align: center;
 }
+
+/* slider con parallax */
+.parallax-car {
+
+
+    /* Full height */
+    height: 100%; 
+    width: 100%;
+    position: absolute;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#wp-inicio{
+	height: 100%;
+}
+#carousel-parallax{
+	margin-top: -20px;
+	height: 100%;
+}
+.overlay-parallax{
+ 	bottom:0;   
+    left:0;
+    width:100%;
+    height: auto;
+    background-color: rgba(0,0,0,0.25);
+    color:white;
+    text-align: center;
+}
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+
+
+.carousel-inner {
+    height: 100%;
+    overflow: auto;
+}
+
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/* background setup */
+.background {
+    background-repeat:no-repeat;
+    /* custom background-position */
+    background-position:50% 0% !important;
+    /* ie8- graceful degradation */
+    background-position:50% 50%9 !important;
+
+    background-size: cover;
+}
+
+/* fullscreen setup */
+html, body {
+    /* give this to all tags from html to .fullscreen */
+    height:100%;
+}
+
+.fullscreen,
+.content-a {
+    width:100%;
+    min-height:100%;
+}
+.not-fullscreen,
+.not-fullscreen .content-a,
+.fullscreen.not-overflow,
+.fullscreen.not-overflow .content-a {
+    height:100%;
+    overflow:hidden;
+}
+/*------------------------------parallax carousel-----------------
+*/
+.navbar-brand img{
+	height: 50px;
+	margin-top: -10px;
+}
+#solo-768{
+	height: 50px;
+	margin-top: -10px;
+	display: none;
+}
 .fl{
 	display: none;
+}
+.tel{
+	color: white;
+}
+.fade-img{
+}
+span a.tel{
+	color: #A5A5A5;
 }
 /*Dentro del header*/
 .heaven{
@@ -23,7 +125,14 @@ html{
 	color: white;
 	font-size: 14px;
 	font-weight: bold;
+	display: none;
 
+}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-default .navbar-nav .open .dropdown-menu > li > a{
+	color:white;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover{
+	color: #B0D2EC;
 }
 .heaven p{
 	color:white;
@@ -48,6 +157,12 @@ html{
 .navbar-header{
 	height: 70px;
 }
+.menu{
+	position:fixed;
+	opacity: .9;
+	width: 100%;
+	z-index: 100;
+}
 #menu-items{
 	margin-top: 20px;
 	font-weight: 700;
@@ -67,17 +182,20 @@ li.dropdown, li#r-border{
 #mycarousel{
 	font-family: Cabin;
 }
+
 #taller{
 	text-align: center;
 	color: white;
-	background-color: #123;
+	width: 100%;
+	background-color: #001234;
 	font-family: Cabin;
-	height: 84px;
-	margin-top: -20px;
-
+	height: 100px;
+	clear: both;
+	padding: 0;
 }
 #taller h1{
-	line-height: 2.2;
+	position: static;
+	margin-top: 30px;
 }
 .container{
 	padding: 0;
@@ -85,6 +203,10 @@ li.dropdown, li#r-border{
 	font-family: Cabin;
 	font-weight: bold;
 
+}
+#fade-ser{
+	visibility: hidden;
+	margin-top:20px;
 }
 .rounded-div{
 	width: 100px;
@@ -100,6 +222,7 @@ li.dropdown, li#r-border{
 	font-size: 65px;
 	margin-top: 15px;
 	cursor: default;
+	text-align: center;
 }
 .rounded-div i:hover{
 	font-size: 70px;
@@ -114,7 +237,7 @@ li.dropdown, li#r-border{
 	width: 70px;
 	text-align: center;
 	border: none;
-	margin-top:20px;
+	margin-top:10px;
 }
 #btn-ser:hover{
 	background-color: #545454;
@@ -137,6 +260,7 @@ li.dropdown, li#r-border{
 #piezas{
 	background-color: #123;
 	color: white;
+	visibility: hidden;
 }
 
 .white{
@@ -147,10 +271,12 @@ li.dropdown, li#r-border{
 	background-color: #123;
 	text-align: center;
 	float: right;
+	visibility: hidden;
 }
 #imagenes{
 	padding:0; 
 	margin-bottom: 30px;
+	visibility: hidden;
 }
 .omo{
 	padding: 0;
@@ -213,19 +339,59 @@ li.dropdown, li#r-border{
 
 footer{
 	height: 100px;
-	background-color: #1A1A1A;
+	background-color: #1E1E1E;
 	clear:both;
 }
 
 #info-footer, #redes-footer {
 	text-align: left;
 }
-#info-footer p, #redes-footer p {
+#info-footer p, #redes-footer p, #solide-foo p{
 	color:white;
+	margin-top: 20px;
+}
+#logo-foo{
+	height: 50px;
+	margin-top: 20px;
 }
 
+#solide-foo p b{
+	color: red;
+}
+#solide-foo a img{
+	width: 60px;
+}
+#log-foo{
+	text-align: left;
+}
+#bottom-bar{
+	background-color: #000;
+	height: 50px;
+	width: 100%;
+}
+#bottom-solide{
+	text-align: left;
+	visibility: hidden;
+}
+#bottom-solide img{
+	height: 50px;
+}
+#bottom-love{
+	text-align: right;
+	margin-top: 10px;
+	height: 50px;
+	visibility: hidden;
+}
+#bottom-love p{
+	color:white;
+}
+#bottom-love p i{
+	color:#CB0023;
+}
+
+
 /*-------------Contacto------------------*/
-.map{
+/*.map{
 	width: 90%;
 	height:400px;
 	border:1px solid #D1D1D1;
@@ -268,9 +434,275 @@ footer{
 #input-submit:hover{
 	background-color: #545454;
 	transition: all 1s ease-out;
-}
-/*-------------Tamaños------------------*/
+}*/
+/*-------------parallax------------------*/
+.parallax {
+    /* The image used */
+    background-image: url('img/uns.jpeg');
 
+    /* Full height */
+    height: 90%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -20px;
+    z-index: -100;
+}
+.parallax2 {
+    /* The image used */
+    background-image: url('img/footer9.jpg');
+
+    /* Full height */
+    height: 100px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -20px;
+}
+.parallax3 {
+    /* The image used */
+    background-image: url('img/footer11.jpg');
+
+    /* Full height */
+    height: 100px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -20px;
+}
+/*-------------Contacto-2------------------*/
+
+.wrapper#img-up{
+	margin-top: -20px;
+	display: inline-block;
+	width: 100%;
+	position: relative;
+	height: auto;	
+}
+.wrapper#img-up img{
+	width: 100%;
+}
+.overlay {
+
+	position: absolute;
+	bottom:12.9%;
+	left:0;
+	width:100%;
+	height:100px;
+	background-color: rgba(0,0,0,0.70);
+	color:white;
+	text-align: center;
+}
+.overlay p{
+	color:white;
+	width: 97%;
+	margin: 0 auto;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-default .navbar-nav .open .dropdown-menu > li > a{
+	color: #001234;
+}
+/*--------------------------------------------------Scroller--------------------------------------------------
+*/
+
+#scroller a span, #scroller2 a span, #scroller3 a span, #scroller4 a span {
+	position: absolute;
+	left: 50%;
+	bottom:0;
+	width: 30px;
+	height: 50px;
+	margin-left: -15px;
+	border: 2px solid #fff;
+	border-radius: 50px;
+	box-sizing: border-box;
+}
+#scroller a span:hover, #scroller2 a span:hover, #scroller3 a span:hover, #scroller4 a span:hover {
+	opacity: .5;
+	transition: all .5s ease-out;
+}
+#scroller a span::before, #scroller2 a span::before, #scroller3 a span::before,#scroller4 a span::before{
+	position: absolute;
+	top: 10px;
+	left: 50%;
+	content: '';
+	width: 6px;
+	height: 6px;
+	margin-left: -3px;
+	background-color: #fff;
+	border-radius: 100%;
+	-webkit-animation: sdb10 2s infinite;
+	animation: sdb10 2s infinite;
+	box-sizing: border-box;
+}
+@-webkit-keyframes sdb10 {
+	0% {
+		-webkit-transform: translate(0, 0);
+		opacity: 0;
+	}
+	40% {
+		opacity: 1;
+	}
+	80% {
+		-webkit-transform: translate(0, 20px);
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@keyframes sdb10 {
+	0% {
+		transform: translate(0, 0);
+		opacity: 0;
+	}
+	40% {
+		opacity: 1;
+	}
+	80% {
+		transform: translate(0, 20px);
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+/*----------------------------------------------------Scroller--------------------------------------------------
+*/
+
+.wrapper #cinturon, .wrapper2 #cinturon{
+	width: 100%;
+	height: 120px;
+	padding: 0;
+	margin-top: -20px;
+	background-color: #001234;;
+}
+.wrapper2 #cinturon{
+	margin-top: 0;
+}
+.wrapper #cinturon h1#contactanos, .wrapper2 #cinturon h1#contactanos{
+	color:white;
+	font-family: Cabin;
+	line-height: 110px;
+	font-size: 50px;
+	font-weight: 600;
+	visibility: hidden;
+}
+.wrapper .container{
+	text-align: justify;
+	min-width: 250px;
+}
+.container p{
+	font-weight: normal;
+}
+#boton{
+	text-align: center;
+}
+#submit, #ver-mapa{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 50%;
+	background-color: #123;
+	border: none;
+}
+#submit:hover, #ver-mapa:hover{
+	background-color: #707070;
+}
+#small-cont{
+	visibility: hidden;
+	margin-top: 30px;
+	width: 33.3%;
+	background-color: #FAFAFA;
+	height: 410px;
+	border:3px dotted #EDEDED;
+	max-width: 350px;
+}
+#first{
+	margin-top:40px;
+}
+#small-cont b{
+	color:#123;
+	margin-top:20px;
+}
+#redes-sociales{
+	margin-top: 60px;
+}
+#social{
+	text-align: center;
+}
+.wrapper{
+	padding: 0;
+	font-family: Cabin;
+}
+.wrapper #map{
+	visibility: hidden;
+	width: 100%;
+	height: 450px;
+	padding: 0;
+	border:3px dotted #EDEDED;
+	border-bottom: none;
+	margin-bottom: 1px;
+	min-width: 270px;
+}
+#map{
+	visibility: hidden;
+}
+.pc{
+	display: block;
+}
+.tablet{
+	display: none;
+}
+.phone{
+	display: none;
+}
+/*-------------End Contacto------------------*/
+/*-------------Conócenos------------------*/
+
+#acerca-de, #mision, #vision{
+	text-align: center;
+	margin-top: 20px;
+	visibility: hidden;
+}
+ #mision, #vision{
+ 	margin-bottom: 30px;
+ }
+
+#acerca-de p, #mision p, #vision p{
+	text-align: justify;
+}
+.img-fade-gal{
+	visibility: hidden;
+}
+
+/*-------------Conócenos------------------*/
+
+/*-------------Tamaños------------------*/
+@media (min-height: 1000px) {
+	.overlay{
+		bottom: 50;
+	}
+}
+
+@media (max-width: 1025px) {
+	.overlay {
+	}
+}
+@media (max-width: 950px) {
+
+	#btn-ser{
+		margin-top:10px;
+	}
+
+}
 @media (max-width: 842px) {
 
 	#piezas h1{
@@ -282,16 +714,53 @@ footer{
 	.map{
 		height: 350px;
 	}
+	#redes-sociales{
+	margin-top: 30px;
+	}
+	#btn-ser{
+		margin-top:10px;
+	}
+
 
 }
-@media (max-width: 768px) {
 
+@media (max-width: 768px) {
+	.navbar-brand img{
+		display: none;
+	}
+	#solo-768{
+		display: inline-block;
+	}
+	.parallax-car, .parallax, .parallax2, .parallax3 {
+    background-attachment:scroll;
+	}
+
+	.navbar-default{
+		background-color: #1A1A1A;
+	}
+	.navbar-default .navbar-nav > li > a{
+		color:white;
+	}
+	.navbar-default .navbar-nav > li > a:hover{
+		color:#B0D2EC;
+	}
+	.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
+		background-color: white;
+	}
+	.navbar-default{
+		border:none;
+	}
+	.heaven{
+		display: none;
+	}
+	
 	footer{
-		height: 300px;
+		height: 320px;
 	}
 	#info-footer, #redes-footer {
 		text-align: center;
 	}
+	 #bo
 	.map{
 		height: 400px;
 		width: 80%;
@@ -311,8 +780,40 @@ footer{
 		font-weight: 700;
 		width: 80%
 	}
-	#contact{
-		height: 900px;
+	#small-cont{
+		width: 100%;
+		max-width: none;
+		margin-bottom: 20px;
+		min-width: 250px;
+		text-align: center;
+		border-width: 1px;
+	}
+	.wrapper #map{
+		border-width: 1px;
+	}
+	#redes-sociales{
+	margin-top: 80px;
+	}
+	.pc{
+	display: none;
+	}
+	.tablet{
+		display: block;
+	}
+	.phone{
+		display: none;
+	}
+	.overlay {
+	}
+	#scroller{
+		top:0;
+	}
+	#bottom-solide, #bottom-love{
+		width: 50%;
+		padding: 0;
+	}
+	#log-foo{
+		text-align: center;
 	}
 }
 @media (max-width: 712px) {
@@ -322,31 +823,64 @@ footer{
 		line-height: 4;
 	}
 	
+	
+}
+@media (max-width: 546px) {
+	 .overlay {
+		height: 150px;
+		}
+
+}
+@media (max-width: 526px) {
+
+	.overlay-parallax{
+  		height:200px;
+  	}
 }
 @media (max-width: 479px) {
 
-	.heaven{
-		display: none;
-	}
-	.navbar-default{
-		background-color: #1A1A1A;
-	}
-	.navbar-default .navbar-nav > li > a{
-		color:white;
-	}
-	.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
-		background-color: white;
-	}
-	.navbar-default{
-		border:none;
-	}
+	
 	.navbar-default .navbar-nav .open .dropdown-menu > li > a{
 		color:#EDEDED;
 	}
-	.map{
-		height: 300px;
+	.wrapper #cinturon, .wrapper2 #cinturon{
+		height: 90px;
+		margin-bottom: 20px;
+	}
+	.wrapper #cinturon h1#contactanos, .wrapper2 #cinturon h1#contactanos{
+		line-height: 110px;
+		font-size: 30px;
+	}
+	#escribe{
+	}
+	#escribe h1{
+		font-size: 18px;
+	}
+	#submit, #ver-mapa{
+		width: 95%;
+	}
+	#cinturon{
+		margin-top: -20px;
+	}
+
+}
+@media (max-width: 415px) {
+
+	
+	.pc{
+	display: none;
+	}
+	.tablet{
+		display: none;
+	}
+	.phone{
+		display: block;
+	}
+	#nuestros-servicios{
+		font-size: 24px;
 	}
 }
+
 @media (max-width: 388px) {
 
 	#piezas h1{
@@ -361,15 +895,25 @@ footer{
 	}
 	
 	#taller h1{
-		font-size: 15px;
-		line-height: 6;
+		font-size: 18px;
 	}
-	.map{
-		height: 250px;
+	#submit{
+		width: 80%;
 	}
-	#contact{
-		height:800px;
+	footer{
+		height: 340px;
 	}
+	#bottom-bar{
+		height: 100px;
+	}
+	#bottom-solide, #bottom-love{
+		float: none;
+		text-align: center;
+		width:100%;
+	}
+	
+}
+
 }
 @media (max-width: 330px) {
 
@@ -377,12 +921,23 @@ footer{
 		margin-left: 0
 	}
 	#taller h1{
-		font-size: 13px;
-		line-height: 7;
+		font-size: 15px;
 	}
 
 	#dv-sc{
 		width: 100%;
+	}
+	#cinturon{
+		z-index: -100;
+	}
+	.overlay {
+		height:135px;
+	}
+	#submit, #ver-mapa{
+		font-size: 12px;
+	}
+	#nuestros-servicios{
+		font-size: 20px;
 	}
 }
 @media (max-width: 290px) {
@@ -404,10 +959,7 @@ footer{
 		margin-left: -20px;
 	}
 
-	#taller h1{
-		font-size: 11px;
-		line-height: 8;
-	}
+
 	#contact h1{
 	font-size: 22px;
 	}
@@ -432,6 +984,11 @@ footer{
 	#contact{
 		height:730px;
 	}
+
+	#submit, #ver-mapa{
+		font-size: 10px;
+		width: 99%;
+	}
 }
 @media (max-width: 220px) {
 
@@ -442,12 +999,12 @@ footer{
 	.col-xs-6 .white{
 		width: 90px;
 	}
-	#taller h1{
-		font-size: 9px;
-		line-height: 9;
-	}
+
 	.map{
 		height: 200px;
+	}
+	#solo-768{
+		height: 35px;
 	}
 }
 

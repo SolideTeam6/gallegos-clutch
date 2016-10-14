@@ -7,14 +7,15 @@
         <title>Gallegos Clutch</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="format-detection" content="telephone=no">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="css/MainStyle.css">
         <link rel="stylesheet" href="css/modal-style.css">
+        <link rel="stylesheet" type="text/css" href="css/MainStyle.css">
         <link rel="stylesheet" href="css/loader-style.css">
     </head>
     <body>
@@ -26,8 +27,8 @@
         <header>
             <div class="heaven">
                 <div class="col-md-12" id="heaven">
-                    <p id="loc">Chihuahua, Chih. <span style="color:#A5A5A5">614-123-4567</span></p>
-                    <p id="dir">Colonia X Calle Tal nombre #123 <span style="color:#A5A5A5"> correocompañia@dominio.com</span></p>
+                    <p id="loc">Chihuahua, Chih. <span><a href="tel://6142125543" class="tel">(614) 212-5543</a></span></p>
+                    <p id="dir">Colonia X Calle Tal nombre 01005A <span style="color:#A5A5A5">jgallegos@gallegosclutch.com</span></p>
                 </div>  
             </div>
 
@@ -42,43 +43,23 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                       </button>
-                      <a class="navbar-brand" href="#">Logo</a>
+                      <a class="navbar-brand" href="index.html"><img src="img/g-logo-c.png"><img src="img/g-logo.png" id="solo-768"></a>
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
                       <ul class="nav navbar-nav navbar-right" id="menu-items">
                         <li id="r-border" ><a id="btn-servicios" href="#taller">Servicios</a></li>
+                        <li id="r-border"><a href="conocenos.html">Conócenos</a></li>
                         <li class="dropdown">
-                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Promociones<span class="caret"></span></a>
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Galería<span class="caret"></span></a>
                           <ul class="dropdown-menu">
+                            <li><a href="galeria-fotos.html">Galería de fotos</a></li>
                              <li role="separator" class="divider"></li>
-                            <li><a href="#">Action</a></li>
-                             <li role="separator" class="divider"></li>
-                            <li><a href="#">Another action</a></li>
-                             <li role="separator" class="divider"></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                             <li role="separator" class="divider"></li>
+                            <li><a href="galeria-videos.html">Galería de videos</a></li>
                           </ul>
                         </li>
-                        <li id="r-border"><a id="btn-contacto" href="#contact">Contacto</a></li>
-
-                        <li class="dropdown" style="border:none">
-                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Conócenos<span class="caret"></span></a>
-                          <ul class="dropdown-menu">
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">Action</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">Another action</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                            <li role="separator" class="divider"></li>
-                          </ul>
-                        </li>
+                        <li style="border:none"><a href="contacto.html">Contacto</a></li>
                       </ul>
                     </div><!-- /.navbar-collapse -->
                   </div><!-- /.container-fluid -->
@@ -86,50 +67,59 @@
             </div><!-- menu-->
         </header>
 
-        <div class="content">
-            <!-- Header Carousel -->
-            <div id="myCarousel" class="carousel slide" data-ride="carousel"> 
-                <!-- Indicators -->
-                
-                <ol class="carousel-indicators">
-                  <li data-target="#myCarousel" data-slide-to="0" class="active" style="background-color:#123"></li>
-                  <li data-target="#myCarousel" data-slide-to="1" style="background-color:#123"></li>
-                </ol>
+        <!-- carousel-->
+        <div class="wrapper" id="wp-inicio">
+          <div id="carousel-parallax" class="carousel slide">
                 <div class="carousel-inner">
-                  <div class="item active"> <img src="img/car2.jpg" style="width:90%" alt="First slide">
-                    <div class="container">
-                      <div class="carousel-caption">
-                        <h2 class="tit-car animated slideInDown"><b>Servicio Mecánico <br> Para <b style="color:#123">Embragues</b></b></h2>
-                        <p class="text-car animated slideInLeft">Contamos con tecnología de vanguardia y <br> una amplia gama de servicios de  mantenimiento <br>
-                            preventivo y correctivo para todas las marcas y <br>modelos de vehículos.
-                        </p>
-                        <p><a class="btn btn-lg btn-primary animated slideInRight" id="btn-car" href="#" role="button">Conoce más</a></p>
-                        <button type="button" id="car-small-btn" class="btn btn-info">Conoce más</button>
-                      </div>
+                    <div class="item active">
+                        <!-- Set the first background image using inline CSS below. -->
+                        <div class="fill parallax-car"  style="background-image:url('img/car1.jpg');"></div>
+                        <div class="carousel-caption overlay-parallax animated fadeIn">
+                             <h2 class="tit-car animated slideInDown"><b>Servicio Mecánico <br> Para <b style="color:#0F9DFF;">Embragues</b></b></h2>
+                            <p class="text-car animated slideInLeft">Contamos con tecnología de vanguardia y  una amplia gama de servicios de  mantenimiento preventivo y correctivo para todas las marcas y modelos de vehículos.
+                            </p>
+                            <p><a class="btn btn-lg btn-primary animated slideInRight" id="btn-car" href="#" role="button">Conoce más</a></p>
+                            <button type="button" id="car-small-btn" class="btn btn-info">Conoce más</button>
+                        </div>
                     </div>
-                  </div>
-                  <div class="item"> <img src="img/car1.jpg" style="width:90%" data-src="" alt="Second    slide">
-                    <div class="container">
-                      <div class="carousel-caption">
-                        <h2 class="tit-car"><b>Reconstrucción <br> De <b style="color:#123">Piezas</b></b></h2>
-                        <p class="text-car">Contamos con tecnología de vanguardia y <br> una amplia gama de servicios de  mantenimiento <br>
-                            preventivo y correctivo para todas las marcas y <br>modelos de vehículos.
-                        </p>
-                        <p><a class="btn btn-lg btn-primary" id="btn-car" href="#" role="button">Conoce más</a></p>
-                        <button type="button" id="car-small-btn" class="btn btn-info">Conoce más</button>
-                      </div>
+                    <div class="item">
+                        <!-- Set the second background image using inline CSS below. -->
+                        <div class="fill  parallax-car" style="background-image:url('img/car2.jpg');"></div>
+                        <div class="carousel-caption overlay-parallax animated fadeIn">
+                            <h2 class="tit-car  animated slideInDown"><b>Reconstrucción <br> De <b style="color:#0F9DFF">Piezas</b></b></h2>
+                            <p class="text-car slideInLeft">Contamos con tecnología de vanguardia y  una amplia gama de servicios de  mantenimiento 
+                                preventivo y correctivo para todas las marcas y modelos de vehículos.
+                            </p>
+                            <p><a class="btn btn-lg btn-primary animated slideInRight" id="btn-car2" href="#" role="button">Conoce más</a></p>
+                            <button type="button" id="car-small-btn" class="btn btn-info">Conoce más</button>
+                        </div>
                     </div>
-                  </div>
-                </div>
-                <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> 
-                <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a> 
-             </div><!-- myCarousel -->
-            <div id="taller">
+                    <div class="item">
+                        <!-- Set the third background image using inline CSS below. -->
+                        <div class="fill parallax-car" style="background-image:url('img/car3.jpg');"></div>
+                        <div class="carousel-caption overlay-parallax animated fadeIn">
+                            <h2 class="tit-car  animated slideInDown"><b>Reconstrucción <br> De <b style="color:#0F9DFF">Piezas</b></b></h2>
+                            <p class="text-car animated slideInLeft">Contamos con tecnología de vanguardia y una amplia gama de servicios de  mantenimiento
+                                preventivo y correctivo para todas las marcas y modelos de vehículos.
+                            </p>
+                            <p><a class="btn btn-lg btn-primary animated slideInRight" id="btn-car3" href="#" role="button">Conoce más</a></p>
+                            <button type="button" id="car-small-btn" class="btn btn-info">Conoce más</button>   
+                        </div>
+                    </div>
+                </div><a class="left carousel-control" href="#carousel-parallax" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#carousel-parallax" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a> 
+            </div>
+          </div>
+          <!-- end of carousel-->
+          <div class="col-xs-12" id="taller">
                 <h1><b>Taller Mecánico Automotriz Especializado</b> </h1>
             </div>
-            <div class="container" >
+          <div class="content" style="padding:0">
+            <!-- <div id="taller">
+                <h1><b>Taller Mecánico Automotriz Especializado</b> </h1>
+            </div> -->
+            <div class="container" id="fade-ser" >
                 <div class="col-xs-12">
-                    <h1 class="animated fadeInDown"> <b>Nuestros Servicios</b></h1>
+                    <h1 id="nuestros-servicios"> <b>Nuestros Servicios</b></h1>
                 </div>
                 <div class="col-xs-12 col-sm-4 col-md-2">
                     <h3> Servicio 1</h3>
@@ -276,7 +266,7 @@
                     </div>
 
                 </div>
-                <div class="col-xs-12 col-sm-4 col-md-2">
+                <div class="col-xs-12 col-sm-4 col-md-2" >
                     <h3> Servicio 6</h3>
                     <div class="rounded-div">
                         <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>   
@@ -317,9 +307,9 @@
                             </div>
                             <div class="col-xs-6">
                                 <p class="white">
-                                lunes-viernes <br>
-                                sábado  <br>
-                                domingo
+                                Lunes-Viernes <br>
+                                Sábado  <br>
+                                Domingo
                                 </p>
 
                             </div>
@@ -327,7 +317,7 @@
                                 <p class="white">
                                 8:00-18:00 <br>
                                 8:00-14:00 <br>
-                                cerrado
+                                Cerrado
                                 </p>
                             </div>
                         </div>
@@ -351,7 +341,7 @@
                 </div>
 
             </div>
-            <div id="contact">
+            <!-- <div id="contact">
                 <br>
                 <h1 style="margin-bottom:50px;" id="contacto">¡Contáctanos!</h1>
                 <div class="col-xs-12 col-sm-6">
@@ -370,11 +360,11 @@
                 <div class="col-xs-12 col-sm-6" >
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7028.329688617712!2d-105.49213047459092!3d28.263017980259697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86eb13ef2ff980d5%3A0x1bcebd2d7fe483a!2sDeportiva%2C+33130+Pedro+Meoqui%2C+Chih.!5e0!3m2!1ses-419!2smx!4v1475262264649"  frameborder="0" class="map" allowfullscreen></iframe>
                 </div>
-            </div>
+            </div> -->
         </div>
         <div id="social">
-            <div class="row" id="col-12-sc">
-                <div class="col-xs-6 col-sm-4" id="dv-sc">
+            <div class="col-xs-12" id="col-12-sc">
+                <div class="col-xs-9 col-sm-4" id="dv-sc">
                     <div class="col-xs-3">
                         <div class="circulo-rs" id="fb">
                             <a href="www.facebook.com" ><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -399,26 +389,32 @@
             </div>
         </div><!-- social -->
         <footer>
-            <div class="col-xs-12 col-sm-2">
-                LOGO
+            <div class="col-xs-12 col-sm-3" id="log-foo">
+                <img src="img/g-logo.png" class="fade-img" id="logo-foo">
             </div>
-            <div class="col-xs-12 col-sm-4" id="info-footer">
-                <p>
+            <div class="col-xs-12 col-sm-3" id="info-footer">
+                <p style="color:#ffffff">
                     Chihuahua, Chih. <br>
                     José Juan Gallegos <br>
-                    (614) 147-1235 <br>
-                    contacto@gallegosclutch.com
+                    <a href="tel://6142125543" class="tel">(614) 212-5543</a>
+                    
                 </p>
             </div>
-            <div class="col-xs-12 col-sm-4" id="redes-footer">
-                <p>Redes sociales <br>
-                    <i class="fa fa-twitter-square" aria-hidden="true"></i> @gallegosclutch <br>
-                    <i class="fa fa-facebook-square" aria-hidden="true"></i> /GallegosClutch <br>
-                    <i class="fa fa-instagram" aria-hidden="true"></i> @gallegosclutch
-                </p>
+            <div class="col-xs-12 col-sm-3" id="redes-footer">
+                <p>Visitas:<br>
+                   <a href="http://www.cerotec.net/estadisticas-84195/gallegosclutch.com" title="detalles de las visitas"><img src="http://www.cerotec.net/contador.php?t=5&s=4&i=84195" alt="Contador de visitas y estadísticas"></a>
             </div>
-            <div class="col-xs-12 col-sm-2">
-                solidemx
+            <div class="col-xs-12 col-sm-3" id="solide-foo">
+                <p> <i class="fa fa-registered" aria-hidden="true"></i> 2016 Gallegos Clutch - Derechos Reservados</p>
+            </div>
+
+            <div class="col-xs-12" id="bottom-bar">
+                <div class="col-xs-12 col-sm-6" id="bottom-solide">
+                    <a href="http://solidemx.com"><img src="img/solide-red.png"></a>
+                </div>
+                <div class="col-xs-12 col-sm-6" id="bottom-love">
+                  <p><i class="fa fa-code" aria-hidden="true"></i> with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="http://solidemx.com"><i class="fa fa-cube" aria-hidden="true"></i></a> 2 great <i class="fa fa-users" aria-hidden="true"></i></p>
+                </div>
             </div>
         </footer>
 
@@ -427,19 +423,10 @@
           
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
           <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-          <!-- <script src="js/fakeLoader.min.js"></script> -->
           <script src="js/loader.js"></script>
+          <script src="js/waypoints.min.js"></script>
+          <script src="js/index.js"></script>
           
-          <!-- <script>
-            $(document).ready(function(){
-                $("#fakeloader").fakeLoader({
-                    timeToHide:2000,
-                    bgColor:"#123",
-                    //spinner:"spinner1"
-                    imagePath:"css/img/gears2.gif"
-                });
-            });
-        </script> -->
     <!--_______________________________________scripts______________________________________________-->
     </body>
 </html>

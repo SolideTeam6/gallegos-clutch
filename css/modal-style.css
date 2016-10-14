@@ -1,58 +1,30 @@
 
-.navbar-inverse { 
-	background-color: #222;
-}
-.navbar-inverse .navbar-nav > .active > a{
-	background-color: #222;
-}
-#space{
-	width: 100%;
-	height: 83px;
-}
-#modal-content{
-
-	overflow-y: scroll;
-	width: 75%;
-}
-#btn-car{
-	background-color: #123;
+#btn-car, #btn-car2, #btn-car3{
+	background-color: #001234;
 	border: none;
+}
+.tit-car{
+	color: white;
+
 }
 
 #car-small-btn{
 	display: none;
-	background-color: #123
+	background-color: #001234
 }
 .text-car{
 	font-size: 18px;
-	color:#727272;
+	color:#fff;
 }
 p{
 	color: black;
 }
-#logo{
-	margin-top: -20px;
-}
-
-.carousel-control.right{
+.carousel-control.right, .carousel-control.left{
 
 	background-image: none;
 	background-color: none;
+	z-index: 50;
 }
-
-.carousel-control.left{
-	background-image: none;
-	background-color: none;
-}
-
-.carousel-caption{
-	text-align: right;
-	color: black;
-	text-shadow:none;
-	width: 70%;
-
-}
-
 
 @media (max-width: 945px) {
 
@@ -75,29 +47,14 @@ p{
 		font-size: 22px;
 
 	}
-  
-  	.text-car{
-  		font-size:12px;
-  	}
 
-  	#btn-car{
+  	#btn-car, #btn-car2, #btn-car3{
   		width: 100px;
   		font-size: 12px;
   	}
 }
 
-@media (max-width: 600px) {
-  
-  	.text-car{
-  		color:#fff;
-  		text-shadow:
-   -1px -1px 0 #898989,
-    1px -1px 0 #898989,
-   -1px 1px 0 #898989,
-    1px 1px 0 #898989;
-  	}
 
-}
 @media (max-width: 525px) {
   
   	.text-car{
@@ -124,42 +81,6 @@ p{
   	.container{
   		margin-top: 30px;
   	}
-  	 #btn-car{
-  		display: none;
-  	}
-  	#car-small-btn{
-  		display: block;
-  		float: right;
-  	}
-}
 
-@media (max-width: 300px) {
-  
-	.tit-car{
-		font-size: 15px;
-
-	}
   	
-}
-@media (max-width: 269px) {
-  
-	.tit-car{
-		font-size: 12px;
-
-	}
-	.content{
-  		margin-top: 10px;
-  	}
-}
-
-@media (max-width: 269px) {
-  
-	.tit-car{
-		font-size: 10px;
-	}
-	.container{
-		margin-top:40px;
-	}
-}
-
 }
