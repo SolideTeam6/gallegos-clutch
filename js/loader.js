@@ -171,6 +171,15 @@ $(function($) {
             triggerOnce: true
 
         });
+        $('#vision').waypoint(function() {
+            $('#valores').toggleClass( 'fadeIn animated' );
+            $("#valores").css("visibility", "visible");
+        },
+        {
+            offset: '70%',
+            triggerOnce: true
+
+        });
         $('.img-fade-gal').waypoint(function() {
             $(this).toggleClass( 'flipInY animated' );
             $(".img-fade-gal").css("visibility", "visible");

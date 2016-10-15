@@ -12,6 +12,10 @@ body{
 }
 html{
 	text-align: center;
+	height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 /* slider con parallax */
@@ -208,6 +212,10 @@ li.dropdown, li#r-border{
 	visibility: hidden;
 	margin-top:20px;
 }
+#fade-ser h3{
+	font-size: 20px;
+	height: 50px;
+}
 .rounded-div{
 	width: 100px;
 	height: 100px;
@@ -242,6 +250,22 @@ li.dropdown, li#r-border{
 #btn-ser:hover{
 	background-color: #545454;
 	transition: all 1s ease-out;
+}
+.modal-body{
+	text-align: center;
+}
+.modal-img{
+	width: 50%;
+	height: 300px;
+	margin: 0 auto;
+}
+.modal-img img{
+	border: 1px solid #707070;
+	width: 100%;
+}
+.modal-img iframe{
+	width: 100%;
+	height: 100%;
 }
 
 #blue{
@@ -366,7 +390,7 @@ footer{
 }
 #bottom-bar{
 	background-color: #000;
-	height: 50px;
+	height: 60px;
 	width: 100%;
 }
 #bottom-solide{
@@ -632,6 +656,10 @@ footer{
 	color:#123;
 	margin-top:20px;
 }
+
+#small-cont p a{
+	color: black;
+}
 #redes-sociales{
 	margin-top: 60px;
 }
@@ -672,6 +700,10 @@ footer{
 	margin-top: 20px;
 	visibility: hidden;
 }
+ #valores{
+ 	text-align: center;
+	visibility: hidden	
+ }
  #mision, #vision{
  	margin-bottom: 30px;
  }
@@ -703,6 +735,11 @@ footer{
 	}
 
 }
+@media (max-width: 945px) {
+		#btn-ser{
+		margin-top:-30px;
+	}
+}
 @media (max-width: 842px) {
 
 	#piezas h1{
@@ -718,7 +755,7 @@ footer{
 	margin-top: 30px;
 	}
 	#btn-ser{
-		margin-top:10px;
+		margin-top:-30px;
 	}
 
 
@@ -815,6 +852,11 @@ footer{
 	#log-foo{
 		text-align: center;
 	}
+	.modal-img{
+		width: 70%;
+		height: 300px;
+		margin: 0 auto;
+	}
 }
 @media (max-width: 712px) {
 
@@ -861,6 +903,11 @@ footer{
 	}
 	#cinturon{
 		margin-top: -20px;
+	}
+	.modal-img{
+		width: 80%;
+		height: 200px;
+		margin: 0 auto;
 	}
 
 }
