@@ -251,6 +251,13 @@ li.dropdown, li#r-border{
 	background-color: #545454;
 	transition: all 1s ease-out;
 }
+.modal-dialog{
+	margin-top: 80px;
+	z-index: 100;
+}
+.modal-backdrop.in{
+	z-index: -1;
+}
 .modal-body{
 	text-align: center;
 }
@@ -275,6 +282,8 @@ li.dropdown, li#r-border{
 	text-align: left;
 	height: 220px;
 	margin-top:50px;
+	position: relative;
+	z-index: -10;
 }
 
 #blue h1{
@@ -284,7 +293,7 @@ li.dropdown, li#r-border{
 #piezas{
 	background-color: #123;
 	color: white;
-	visibility: hidden;
+	width: 100%;
 }
 
 .white{
@@ -295,12 +304,13 @@ li.dropdown, li#r-border{
 	background-color: #123;
 	text-align: center;
 	float: right;
-	visibility: hidden;
 }
 #imagenes{
 	padding:0; 
 	margin-bottom: 30px;
 	visibility: hidden;
+	position: relative;
+	z-index: -10;
 }
 .omo{
 	padding: 0;
@@ -393,6 +403,7 @@ footer{
 	height: 60px;
 	width: 100%;
 }
+
 #bottom-solide{
 	text-align: left;
 	visibility: hidden;
@@ -787,13 +798,6 @@ footer{
 	.navbar-default{
 		border:none;
 	}
-	.heaven{
-		display: none;
-	}
-	
-	footer{
-		height: 320px;
-	}
 	#info-footer, #redes-footer {
 		text-align: center;
 	}
@@ -848,6 +852,7 @@ footer{
 	#bottom-solide, #bottom-love{
 		width: 50%;
 		padding: 0;
+		visibility: visible;
 	}
 	#log-foo{
 		text-align: center;
@@ -858,6 +863,15 @@ footer{
 		margin: 0 auto;
 	}
 }
+@media (max-width: 767px) {
+	footer{
+		height: 320px;
+	}
+	#bottom-solide, #bottom-love{
+		visibility: hidden;
+	}
+}
+
 @media (max-width: 712px) {
 
 	#taller h1{
@@ -932,10 +946,10 @@ footer{
 
 	#piezas h1{
 		font-size: 20px;
-		margin-left: -20px;
 	}
 	#piezas{
 		padding: 0;
+		width: 90%;
 	}
 	#blue{
 		padding: 0;
@@ -951,7 +965,7 @@ footer{
 		height: 340px;
 	}
 	#bottom-bar{
-		height: 100px;
+		height: 110px;
 	}
 	#bottom-solide, #bottom-love{
 		float: none;
@@ -964,8 +978,9 @@ footer{
 }
 @media (max-width: 330px) {
 
+
 	#piezas h1{
-		margin-left: 0
+		margin-left: 10px;
 	}
 	#taller h1{
 		font-size: 15px;
