@@ -482,6 +482,7 @@ footer{
 	color:white;
 	width: 97%;
 	margin: 0 auto;
+	font-size: 20px;
 }
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-default .navbar-nav .open .dropdown-menu > li > a{
 	color: #001234;
@@ -897,6 +898,12 @@ footer{
 		text-align: center;
 		width:100%;
 	}
+	.overlay p{
+	color:white;
+	width: 97%;
+	margin: 0 auto;
+	font-size: 12px;
+}
 }
 @media (max-width: 330px) {
 	#piezas h1{
