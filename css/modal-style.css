@@ -5,9 +5,7 @@
 }
 .tit-car{
 	color: white;
-
 }
-
 #car-small-btn{
 	display: none;
 	background-color: #001234
@@ -31,7 +29,6 @@ p{
 	.container{
 		margin-top: 40px;
 	}
-  
 }
 
 @media (max-width: 810px) {
@@ -39,7 +36,6 @@ p{
 	.container{
 		margin-top: 60px;
 	}
-  
 }
 @media (max-width: 768px) {
 
@@ -47,16 +43,12 @@ p{
 		font-size: 22px;
 
 	}
-
   	#btn-car, #btn-car2, #btn-car3{
   		width: 100px;
   		font-size: 12px;
   	}
 }
-
-
 @media (max-width: 525px) {
-  
   	.text-car{
   		display: none;
   	}
@@ -65,22 +57,16 @@ p{
   	}
 }
 @media (max-width: 470px) {
-  
-
   	.container{
   		margin-top: 30px;
   	}
-  	
 }
 @media (max-width: 375px) {
   
 	.tit-car{
 		font-size: 18px;
-
 	}
   	.container{
   		margin-top: 30px;
   	}
-
-  	
 }

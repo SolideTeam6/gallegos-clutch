@@ -81,13 +81,11 @@ html{
 
     background-size: cover;
 }
-
 /* fullscreen setup */
 html, body {
     /* give this to all tags from html to .fullscreen */
     height:100%;
 }
-
 .fullscreen,
 .content-a {
     width:100%;
@@ -237,7 +235,6 @@ li.dropdown, li#r-border{
 	cursor: default;
 	transition: all 1s ease-out;
 }
-
 #btn-ser{
 
 	background-color: #707070;
@@ -274,7 +271,6 @@ li.dropdown, li#r-border{
 	width: 100%;
 	height: 100%;
 }
-
 #blue{
 	font-family: Cabin;
 	font-weight: bold;
@@ -285,7 +281,6 @@ li.dropdown, li#r-border{
 	position: relative;
 	z-index: -10;
 }
-
 #blue h1{
 	color:white;
 	margin-left: 30px;
@@ -342,33 +337,27 @@ li.dropdown, li#r-border{
 
     background-color: #1B5FD5;
     transition: all 1s ease-out;
-
 }
 #tw:hover{
 
     background-color: #0AB6FF;
     transition: all 1s ease-out;
-
 }
 #go:hover{
 
     background-color: #FF1500;
     transition: all 1s ease-out;
-
 }
 #in:hover{
 
     background-color: #00A0F0;
     transition: all 1s ease-out;
-
 }  
 #dv-sc{
   margin:0 auto;
   float: none;
   margin-top: 30px;
 } 
- 
-
 /*----- footer-------*/
 
 footer{
@@ -376,7 +365,6 @@ footer{
 	background-color: #1E1E1E;
 	clear:both;
 }
-
 #info-footer, #redes-footer {
 	text-align: left;
 }
@@ -403,7 +391,6 @@ footer{
 	height: 60px;
 	width: 100%;
 }
-
 #bottom-solide{
 	text-align: left;
 	visibility: hidden;
@@ -423,57 +410,12 @@ footer{
 #bottom-love p i{
 	color:#CB0023;
 }
-
-
 /*-------------Contacto------------------*/
-/*.map{
-	width: 90%;
-	height:400px;
-	border:1px solid #D1D1D1;
-	max-height: 500px;
-}
 
-#contact{
-	font-weight: normal;
-	margin-top: 50px;
-	background-color: #123;
-	height: 600px;
-	clear: both;
-}
-#contact h1{
-	font-weight: bolder;
-	color: white;
-	font-family: Cabin;
-}
-.cf{
-	background-color: #123;
-}
-#input-name, #input-email, #input-subject, #input-message{
-	width: 90%;
-	border-radius: 10px;
-	height: 50px;
-	font-size: 20px;
-}
-#input-email, #input-subject, #input-message, #input-submit{
-	margin-top:20px;
-}
-#input-message{
-	height: 120px;
-}
-#input-submit{
-	background-color: #707070;
-	border: none;
-	font-weight: 700;
-	width: 90%
-}
-#input-submit:hover{
-	background-color: #545454;
-	transition: all 1s ease-out;
-}*/
 /*-------------parallax------------------*/
 .parallax {
     /* The image used */
-    background-image: url('img/uns.jpeg');
+    background-image: url('img/gallegos-parallax.jpg');
 
     /* Full height */
     height: 90%; 
@@ -515,7 +457,6 @@ footer{
     margin-top: -20px;
 }
 /*-------------Contacto-2------------------*/
-
 .wrapper#img-up{
 	margin-top: -20px;
 	display: inline-block;
@@ -609,10 +550,8 @@ footer{
 		opacity: 0;
 	}
 }
-
 /*----------------------------------------------------Scroller--------------------------------------------------
 */
-
 .wrapper #cinturon, .wrapper2 #cinturon{
 	width: 100%;
 	height: 120px;
@@ -705,7 +644,6 @@ footer{
 }
 /*-------------End Contacto------------------*/
 /*-------------Conócenos------------------*/
-
 #acerca-de, #mision, #vision{
 	text-align: center;
 	margin-top: 20px;
@@ -725,9 +663,7 @@ footer{
 .img-fade-gal{
 	visibility: hidden;
 }
-
 /*-------------Conócenos------------------*/
-
 /*-------------Tamaños------------------*/
 @media (min-height: 1000px) {
 	.overlay{
@@ -768,10 +704,7 @@ footer{
 	#btn-ser{
 		margin-top:-30px;
 	}
-
-
 }
-
 @media (max-width: 768px) {
 	.navbar-brand img{
 		display: none;
@@ -878,14 +811,11 @@ footer{
 		font-size: 20px;
 		line-height: 4;
 	}
-	
-	
 }
 @media (max-width: 546px) {
 	 .overlay {
 		height: 150px;
 		}
-
 }
 @media (max-width: 526px) {
 
@@ -894,8 +824,6 @@ footer{
   	}
 }
 @media (max-width: 479px) {
-
-	
 	.navbar-default .navbar-nav .open .dropdown-menu > li > a{
 		color:#EDEDED;
 	}
@@ -923,10 +851,8 @@ footer{
 		height: 200px;
 		margin: 0 auto;
 	}
-
 }
 @media (max-width: 415px) {
-
 	
 	.pc{
 	display: none;
@@ -941,7 +867,6 @@ footer{
 		font-size: 24px;
 	}
 }
-
 @media (max-width: 388px) {
 
 	#piezas h1{
@@ -972,13 +897,8 @@ footer{
 		text-align: center;
 		width:100%;
 	}
-	
-}
-
 }
 @media (max-width: 330px) {
-
-
 	#piezas h1{
 		margin-left: 10px;
 	}
@@ -1020,8 +940,6 @@ footer{
 		width: 110px;
 		margin-left: -20px;
 	}
-
-
 	#contact h1{
 	font-size: 22px;
 	}
@@ -1053,8 +971,6 @@ footer{
 	}
 }
 @media (max-width: 220px) {
-
-
 	.white{
 		font-size: 9px;
 	}
@@ -1067,6 +983,31 @@ footer{
 	}
 	#solo-768{
 		height: 35px;
+	}
+}
+@media (min-height: 800px){
+
+	.overlay{
+		bottom: 121px;
+	}
+}
+@media (min-height: 1333px){
+
+	.overlay{
+		bottom: 150px;
+		height: 200px;
+	}
+}
+@media (min-height: 1600px){
+
+	.overlay{
+		bottom: 180px;
+	}
+}
+@media (min-height: 1900px){
+
+	.overlay{
+		bottom: 210px;
 	}
 }
 
