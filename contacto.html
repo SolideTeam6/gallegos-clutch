@@ -70,32 +70,34 @@
 						<h1>¡Escríbenos!</h1>
 						<p>Estámos aquí para contestar cualquier duda que pueda surgir acerca de nuestros servicios. Contáctanos y te contestaremos tan pronto como sea posible.</p>
 					</div>
-					<div class="col-xs-12 col-sm-6">
-						<label for="nombre">Nombre:</label>
-  						<input type="text" class="form-control" id="nombre">
-					</div>
-					<div class="col-xs-12 col-sm-6">
-						<label for="email">Correo electrónico:</label>
-  						<input type="text" class="form-control" id="email">
-					</div>
-					<div class="col-xs-12 col-sm-6">
-						<label for="asunto">Asunto:</label>
-  						<input type="text" class="form-control" id="asunto">
-					</div>
-					<div class="col-xs-12 col-sm-6">
-						<label for="empresa">Empresa:</label>
-  						<input type="text" class="form-control" id="empresa">
-					</div>
-					<div class="col-xs-12">
-						<label for="comment">Comentario:</label>
-  						<textarea class="form-control" rows="5" id="comentario"></textarea>
-					</div>
-					<div class="col-xs-6" id="boton">
-						<button type="button" class="btn btn-danger" id="submit">Enviar</button>
-					</div>
-					<div class="col-xs-6" id="boton">
-						<button type="button" class="btn btn-danger" id="ver-mapa">Ver Mapa</button>
-					</div>
+					<form name="frmContacto" method="post" action="sendbymail.php">
+						<div class="col-xs-12 col-sm-6">
+							<label for="nombre">Nombre:</label>
+	  						<input type="text" class="form-control" required="required" name="nombre" id="nombre">
+						</div>
+						<div class="col-xs-12 col-sm-6">
+							<label for="email">Correo electrónico:</label>
+	  						<input type="text" type="email" class="form-control" required="required" name="email" id="email">
+						</div>
+						<div class="col-xs-12 col-sm-6">
+							<label for="asunto">Asunto:</label>
+	  						<input type="text" class="form-control" required="required"  name="asunto" id="asunto">
+						</div>
+						<div class="col-xs-12 col-sm-6">
+							<label for="empresa">Empresa:</label>
+	  						<input type="text" class="form-control" required="required" name="empresa" id="empresa">
+						</div>
+						<div class="col-xs-12">
+							<label for="comment">Comentario:</label>
+	  						<textarea class="form-control" rows="5" required="required" name="mensaje" id="comentario"></textarea>
+						</div>
+						<div class="col-xs-6" id="boton">
+							<button type="submit" value="Enviar" class="btn btn-danger" name="" id="submit">Enviar</button>
+						</div>
+						<div class="col-xs-6" id="boton">
+							<button type="button" class="btn btn-danger" id="ver-mapa">Ver Mapa</button>
+						</div>
+					</form>
 				</div>
 				<div class="col-xs-12 col-sm-4" id="small-cont">
 					<div class="col-xs-12" id="first">
