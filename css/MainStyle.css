@@ -23,7 +23,7 @@ html{
 
 
     /* Full height */
-    height: 100%; 
+    height: 100%;
     width: 100%;
     position: absolute;
     /* Create the parallax scrolling effect */
@@ -40,7 +40,7 @@ html{
 	height: 100%;
 }
 .overlay-parallax{
- 	bottom:0;   
+ 	bottom:0;
     left:0;
     width:100%;
     height: auto;
@@ -218,7 +218,7 @@ li.dropdown, li#r-border{
 	width: 100px;
 	height: 100px;
 	border-radius: 200px;
-	background-color:#123; 
+	background-color:#123;
 	padding: 0;
 	margin:0 auto;
 	cursor: default;
@@ -301,7 +301,7 @@ li.dropdown, li#r-border{
 	float: right;
 }
 #imagenes{
-	padding:0; 
+	padding:0;
 	margin-bottom: 30px;
 	visibility: hidden;
 	position: relative;
@@ -352,12 +352,12 @@ li.dropdown, li#r-border{
 
     background-color: #00A0F0;
     transition: all 1s ease-out;
-}  
+}
 #dv-sc{
   margin:0 auto;
   float: none;
   margin-top: 30px;
-} 
+}
 /*----- footer-------*/
 
 footer{
@@ -418,7 +418,7 @@ footer{
     background-image: url('img/gallegos-parallax.jpg');
 
     /* Full height */
-    height: 90%; 
+    height: 90%;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -433,7 +433,7 @@ footer{
     background-image: url('img/footer9.jpg');
 
     /* Full height */
-    height: 100px; 
+    height: 100px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -447,7 +447,7 @@ footer{
     background-image: url('img/footer11.jpg');
 
     /* Full height */
-    height: 100px; 
+    height: 100px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -462,7 +462,7 @@ footer{
 	display: inline-block;
 	width: 100%;
 	position: relative;
-	height: auto;	
+	height: auto;
 }
 .wrapper#img-up img{
 	width: 100%;
@@ -600,8 +600,8 @@ footer{
 	border:3px dotted #EDEDED;
 	max-width: 350px;
 }
-#first{
-	margin-top:40px;
+.first{
+	margin-top:60px;
 }
 #small-cont b{
 	color:#123;
@@ -612,17 +612,19 @@ footer{
 	color: black;
 }
 #redes-sociales{
-	margin-top: 60px;
+}
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover{
+	background-color: #123;
 }
 #social{
 	text-align: center;
+	margin-top: -50px;
 }
 .wrapper{
 	padding: 0;
 	font-family: Cabin;
 }
-.wrapper #map{
-	visibility: hidden;
+.wrapper .map{
 	width: 100%;
 	height: 450px;
 	padding: 0;
@@ -652,7 +654,7 @@ footer{
 }
  #valores{
  	text-align: center;
-	visibility: hidden	
+	visibility: hidden
  }
  #mision, #vision{
  	margin-bottom: 30px;
@@ -763,11 +765,10 @@ footer{
 		text-align: center;
 		border-width: 1px;
 	}
-	.wrapper #map{
+	.wrapper .map{
 		border-width: 1px;
 	}
 	#redes-sociales{
-	margin-top: 80px;
 	}
 	.pc{
 	display: none;
@@ -854,7 +855,7 @@ footer{
 	}
 }
 @media (max-width: 415px) {
-	
+
 	.pc{
 	display: none;
 	}
@@ -880,7 +881,7 @@ footer{
 	#blue{
 		padding: 0;
 	}
-	
+
 	#taller h1{
 		font-size: 18px;
 	}
@@ -1017,4 +1018,3 @@ footer{
 		bottom: 210px;
 	}
 }
-
