@@ -33,7 +33,7 @@ $headers = 'From: '.$email_from."\r\n".
 
 echo "<script>";
 
-echo "alert("¡Correo enviado con éxito!");";
+echo '<script language="javascript">alert("¡Enviado con éxito!");</script>';
 
 echo "</script>";
 }
