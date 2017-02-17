@@ -2,8 +2,8 @@
 if(isset($_POST['email'])) {
 
 // Debes editar las próximas dos líneas de código de acuerdo con tus preferencias
-//$email_to = "rgallegos@gallegosclutch.com";
-$email_to = "alexise26@gmail.com";
+$email_to = "rgallegos@gallegosclutch.com";
+//$email_to = "alexise26@gmail.com";
 $email_subject = "Contacto Gallegos Clutch";
 
 // Aquí se deberían validar los datos ingresados por el usuario
@@ -33,7 +33,7 @@ $headers = 'From: '.$email_from."\r\n".
 
 echo "<script>";
 
-echo '<script language="javascript">alert("¡Enviado con éxito!");</script>';
+echo '<script type="text/javascript">alert("¡Enviado con éxito!");</script>';
 
 echo "</script>";
 }
